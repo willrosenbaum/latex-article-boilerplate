@@ -1,0 +1,93 @@
+\documentclass[11pt]{article}
+
+
+\usepackage[margin=1in]{geometry}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage{graphicx}
+\usepackage[small]{caption}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{doi}
+\usepackage{tikz}
+\usepackage{eufrak,bbold}
+
+%% Formatting for hyperlinks
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    filecolor=black,
+    urlcolor=[HTML]{0088CC},
+    pdftitle={},
+}
+
+%% Set up Theorems and other numbered environments
+%% Theorems and Questions get global numbers, other 
+%% environments are numbered by section
+\theoremstyle{definition}
+\newtheorem{thm}{Theorem}
+\newtheorem{que}{Question}
+\newtheorem{prop}{Proposition}[section]
+\newtheorem{lthm}[prop]{Theorem}
+\newtheorem{lem}[prop]{Lemma}
+\newtheorem{cor}[prop]{Corollary}
+\newtheorem{claim}[prop]{Claim}
+\newtheorem{fact}[prop]{Fact}
+\newtheorem{rem}[prop]{Remark}
+\newtheorem{ex}[prop]{Exercise}
+\newtheorem{eg}[prop]{Example}
+\newtheorem{dfn}[prop]{Definition}
+\newtheorem{alg}[prop]{Algorithm}
+\newtheorem{open}[prop]{Open Question}
+\newtheorem{pr}[prop]{Problem}
+\newtheorem{obs}[prop]{Observation}
+\newtheorem{ntn}[prop]{Notation}
+
+\input{macros}
+
+\title{My Finest Work}
+
+\author{
+  Will Rosenbaum\\
+  University of Liverpool\\
+  W.Rosenbaum@liverpool.ac.uk
+}      
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\thispagestyle{empty}
+
+\begin{abstract}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent erat ex, euismod et est vel, dignissim rutrum eros. Aliquam maximus ante id turpis tincidunt tempus. Nam ligula felis, molestie eget eros mollis, faucibus convallis leo. Praesent id tincidunt purus. Sed id elementum lorem. Vestibulum vitae tellus ut dolor volutpat sagittis ac eu quam. Aliquam vestibulum, felis in tincidunt semper, quam massa commodo leo, sed pellentesque turpis enim eget nisi. Aliquam augue magna, mollis ac mi vel, condimentum venenatis lacus. Ut fermentum lacinia tincidunt. Phasellus id urna aliquam, dignissim massa non, accumsan lacus.
+\end{abstract}
+
+%\input{conclusions}
+
+\section{Introduction}
+\label{sec:introduction}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra in risus non dignissim. Pellentesque dignissim erat ut ipsum tincidunt, a fermentum lectus tristique. Aenean id augue fermentum, egestas metus at, tempus tellus. Aenean ac felis sapien. Suspendisse potenti. Ut egestas lorem ac ipsum egestas, et hendrerit orci blandit. Vestibulum non purus ut tortor gravida facilisis. Donec in aliquet lectus. Donec non tortor non neque egestas dapibus sed in ipsum. Mauris eu nisl id velit faucibus vestibulum. Cras hendrerit arcu vitae massa blandit suscipit.
+
+Pellentesque rhoncus, neque nec fringilla ullamcorper, turpis augue maximus turpis, id pulvinar magna arcu vel leo. Proin ultrices est vel enim hendrerit aliquam. Phasellus blandit nisi id nisl sodales pretium. Praesent imperdiet ex nulla, id iaculis tellus scelerisque at. Proin pulvinar ullamcorper nisl, eu maximus augue iaculis et. Quisque ultrices nibh rutrum mollis ullamcorper. Proin convallis ante a nisi scelerisque, ut ullamcorper nunc ultrices. Integer vulputate leo ut mauris accumsan, sit amet consequat massa consequat. Suspendisse in augue vel velit malesuada ultricies. Aenean viverra, metus at blandit scelerisque, ligula lectus interdum leo, eu facilisis sapien ex vitae dolor. Pellentesque placerat metus dui, sit amet hendrerit felis fermentum a. Cras gravida sem eu hendrerit dapibus. Cras rutrum ante nec nulla viverra feugiat. Nam sed rutrum sapien.\cite{Turing1937-computable}
+
+\urlstyle{same}
+\bibliographystyle{plainnat}
+\bibliography{sources}
+
+
+\end{document}
